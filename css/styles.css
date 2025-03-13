@@ -1,0 +1,14 @@
+body {
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    height: 100vh; 
+    
+    
+    background-image: url('/img/vista-pagina-en-construccion.jpg');/* Reemplaza con la ruta correcta */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+fieldset{
+    margin: center;
+}
