@@ -6,12 +6,65 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
+<body class="bodie">
     <nav>
-        <a href="/paginaPrincipal.html">principal</a>
+        <fieldset class="navega">
+            <legend><h3>Navega</h3></legend>
+            <a href="/paginaPrincipal.html" class="link-imagen">
+                <img src="/img/paginaPrinci.png" alt="Formulario inscipcion" class="imagen">
+            </a>
+            <a href="https://saborygusto.com/cartas/carta_chiclayo.html" class="link-imagen">
+                <img src="/img/producto.png" alt="Productos" class="imagen">
+            </a>
+            <a href="/cliente.html" class="link-imagen">
+                <img src="/img/cliente.png" alt="Clientes" class="imagen">
+            </a>
+            
+        </fieldset>
     </nav>
     <main>
+        <h2>Formulario de Pedido</h2>
+        
+        <form class="pedido-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label>Seleccione su comida:</label>
+            <ul class="comida-lista">
+                <li class="comida-item">
+                    <input type="radio" id="pizza" name="comida" value="pizza" required>
+                    <img src="/img/pizza.png" alt="Pizza">
+                    <label for="pizza">Pizza</label>
+                </li>
+                <li class="comida-item">
+                    <input type="radio" id="hamburguesa" name="comida" value="hamburguesa">
+                    <img src="/img/hamburguesa.jpg" alt="Hamburguesa">
+                    <label for="hamburguesa">Hamburguesa</label>
+                </li>
+                <li class="comida-item">
+                    <input type="radio" id="sushi" name="comida" value="sushi">
+                    <img src="/img/sushi.avif" alt="Sushi">
+                    <label for="sushi">Sushi</label>
+                </li>
+                <li class="comida-item">
+                    <input type="radio" id="ensalada" name="comida" value="ensalada">
+                    <img src="/img/salad.jpg" alt="Ensalada">
+                    <label for="ensalada">Ensalada</label>
+                </li>
+            </ul>
+
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Realizar Pedido</button>
+        </form>
+    
     </main>
     <footer>
 

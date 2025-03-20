@@ -1,14 +1,98 @@
-body {
-    margin: 0; /* Elimina los márgenes por defecto */
-    padding: 0; /* Elimina el padding por defecto */
-    height: 100vh; 
-    
-    
-    background-image: url('/img/vista-pagina-en-construccion.jpg');/* Reemplaza con la ruta correcta */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+.bodie {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: white;
+    background-image: url('/img/paraMifondo.png');
+    background-size: cover, 100px 100px, 100px 100px;
+    background-position: center center, right bottom, right top;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
-fieldset{
-    margin: center;
+.maine {
+    display: flex; /* Activa el modelo flexible */
+    justify-content: space-between; /* Espaciado entre los artículos */
+    gap: 30px; /* Espacio entre los artículos */
+    padding: 80px;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+h2,h1{
+    text-align: center;
+}
+.navega {
+    margin: 0 400px; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+}
+
+.link-imagen {
+    display: inline-block;
+}
+
+.imagen {
+    height: 70px; 
+    width: 70px; 
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el formulario de pedido */
+/* Asegura que el formulario se vea bien centrado */
+.pedido-form {
+    max-width: 90%;
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste para la lista de comidas */
+.comida-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Alineación de las imágenes, radios y etiquetas */
+.comida-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Tamaño uniforme para imágenes */
+.comida-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón */
+.pedido-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pedido-form button:hover {
+    background: #dd5ab6;
 }
